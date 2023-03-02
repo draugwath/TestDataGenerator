@@ -5,4 +5,4 @@ def about(request):
     return render(request, 'about.html')
 
 def generator(request):
-    return HttpResponse('My Generator Script')
+    return render(request, 'generator.html')

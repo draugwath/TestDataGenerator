@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document Title</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: row;
+		}
+		.col {
+			flex: 1;
+		}
+		.radio {
+			display: block;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="col">
+			<label class="radio">
+				<input type="radio" name="data-type" value="GDPR"> GDPR
+			</label>
+			<label class="radio">
+				<input type="radio" name="data-type" value="PII"> PII
+			</label>
+			<label class="radio">
+				<input type="radio" name="data-type" value="PHI"> PHI
+			</label>
+			<label class="radio">
+				<input type="radio" name="data-type" value="Credentials"> Credentials
+			</label>
+			<label class="radio">
+				<input type="radio" name="data-type" value="Financial"> Financial
+			</label>
+		</div>
+		<div class="col">
+			<label class="radio">
+				<input type="radio" name="file-type" value="txt"> txt
+			</label>
+			<label class="radio">
+				<input type="radio" name="file-type" value="csv"> csv
+			</label>
+			<label class="radio">
+				<input type="radio" name="file-type" value="docx"> docx
+			</label>
+			<label class="radio">
+				<input type="radio" name="file-type" value="xlsx"> xlsx
+			</label>
+			<label class="radio">
+				<input type="radio" name="file-type" value="pdf"> pdf
+				<input type="checkbox" name="searchable" value="Non-searchable" id="searchable-checkbox" style="display:none;"> Non-searchable
+			</label>
+		</div>
+	</div>
+
+	<script>
+		const pdfRadio = document.querySelector('input[name="file-type"][value="pdf"]');
+const searchableCheckbox = document.querySelector('input[name="searchable"]');
+
+pdfRadio.addEventListener('change', function() {
+  if (this.checked) {
+    searchableCheckbox.style.display = 'block';
+  } else {
+    searchableCheckbox.style.display = 'none';
+  }
+});
+
+const fileRadios = document.querySelectorAll('input[name="file-type"]:not([value="pdf"])');
+
+fileRadios.forEach(function(fileRadio) {
+  fileRadio.addEventListener('change', function() {
+    searchableCheckbox.style.display = 'none';
+  });
+});
+	</script>
+</body>
+</html>
