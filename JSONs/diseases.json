@@ -1,0 +1,29 @@
+{
+  "disease": [
+    "Influenza",
+    "Diabetes mellitus",
+    "Hypertension",
+    "Asthma",
+    "Rheumatoid arthritis",
+    "Osteoarthritis",
+    "COPD (Chronic obstructive pulmonary disease)",
+    "Epilepsy",
+    "Depression",
+    "Anxiety disorder",
+    "Schizophrenia",
+    "Bipolar disorder",
+    "Multiple sclerosis",
+    "Parkinson's disease",
+    "Alzheimer's disease",
+    "Stroke",
+    "Myocardial infarction (Heart attack)",
+    "Heart failure",
+    "Kidney failure",
+    "Hepatitis",
+    "HIV/AIDS",
+    "Tuberculosis",
+    "Malaria",
+    "Dengue fever",
+    "Cancer"
+  ]
+}
