@@ -14,8 +14,8 @@
 ## Building the project
 To build the project, follow these steps:
 1. Clone the repository to your local machine.
-2. Open the solution file (TestDataGenerator.sln) in Visual Studio.
-3. Build the solution in Visual Studio.
+2. Open the project file in Visual Studio.
+3. Build the project in Visual Studio.
 4. The built executable file will be located in the bin/Debug/net6.0 directory.
 
 ## Usage
